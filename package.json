@@ -1,0 +1,24 @@
+{
+  "name": "task-13-9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwona-szerszen/task-13-9.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iwona-szerszen/task-13-9/issues"
+  },
+  "homepage": "https://github.com/iwona-szerszen/task-13-9#readme",
+  "dependencies": {
+    "colors": "^1.3.2",
+    "formidable": "^1.2.1"
+  }
+}
