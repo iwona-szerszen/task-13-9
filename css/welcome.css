@@ -1,0 +1,24 @@
+body {
+	padding: 0;
+	margin-left: 20px;
+	font-family: 'Amatic SC', cursive;
+	background-color: #f9eebb;
+}
+
+[type="file"] {
+	font-family: 'Amatic SC', cursive;
+	font-size: 15px;
+}
+
+[type="submit"] {
+	font-family: 'Amatic SC', cursive;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #ffec64;
+	background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	border: 1px solid #ffaa22;
+	border-radius: 6px;
+	cursor: pointer;
+	padding: 6px 24px;
+	margin-top: 15px;
+}

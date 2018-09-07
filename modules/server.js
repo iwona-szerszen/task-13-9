@@ -3,23 +3,29 @@ const colors = require('colors');
 const handlers = require('./handlers');
 
 function start() {
+	console.log('\nTo upload photo, enter "http://localhost:9000/welcome" or just "http://localhost:9000/" in your browser address bar\n');
+
 	function onRequest(request, response) {
-		console.log('Request has been received'.green);
-		console.log(`Request ${request.url} received`);
+		console.log(`\nRequest`, `${request.url}`.magenta, `has been received`);
 
 		response.writeHead(200, {'Content-Type': 'text/plain; charset=utf-8'});
 
 		switch(request.url) {
 			case '/':
-			case '/start':
+			case '/welcome':
 				handlers.welcome(request, response);
+				break;
+			case '/css/welcome.css':
+				handlers.welcomeStyle(request, response);
 				break;
 			case '/upload':
 				handlers.upload(request, response);
 				break;
-			//case `/show/${request.headers['File-Name']}`:
 			case '/show':
 				handlers.show(request, response);
+				break;
+			case '/css/show.css':
+				handlers.showStyle(request, response);
 				break;
 			default:
 				handlers.error(request, response);
